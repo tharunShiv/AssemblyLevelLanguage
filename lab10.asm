@@ -1,4 +1,4 @@
-; ALP to point cursor to a specifies row and column
+;ALP to point cursor to a specifies row and column
 .model small
 
 .data
