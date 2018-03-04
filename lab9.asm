@@ -1,5 +1,5 @@
+; To display date at the center of the screen
 .model small
-
 print macro 
   mov dl, '\'
   mov ah, 02h
@@ -15,7 +15,7 @@ endm
   mov ax, @data
   mov ds, ax
   
-  mov ax, 0600h
+  mov ax, 0600h ;To make the screen go blank with colors
   mov bh, 0edh
   mov cx, 0000h
   mov dx, 184fh
@@ -52,9 +52,7 @@ endm
   display proc near 
     mov cx, 00h
     mov bx, 10d
-    
-	
-	
+    	
 l1 : mov dx, 00h
    div bx 
    push dx
@@ -69,5 +67,4 @@ l2 : pop dx
   loop l2 
   RET 
   display endp
-  
 end
