@@ -15,7 +15,7 @@ endm
   mov ax, @data
   mov ds, ax
   
-  mov ax, 0600h ;To make the screen go blank with colors
+  mov ax, 0600h 
   mov bh, 0edh
   mov cx, 0000h
   mov dx, 184fh
